@@ -24,6 +24,7 @@ public class RecordDTO implements Serializable {
 		id = entity.getId();
 		moment = entity.getMoment();
 		name = entity.getName();
+		age = entity.getAge();
 		gameTitle = entity.getGame().getTitle();
 		gamePlatform = entity.getGame().getPlatform();
 		genreName = entity.getGame().getGenre().getName();
@@ -83,6 +84,10 @@ public class RecordDTO implements Serializable {
 
 	public void setGenreName(String genreName) {
 		this.genreName = genreName;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 	
 }
